@@ -1,0 +1,34 @@
+Question
+
+Write a program to convert the data in Python(or language of your choice) to a simplified JSON text. Don’t use any library to serialize python data structure to JSON.
+
+
+    • JSON supports strings, number, boolean, null, arrays and objects.
+    • JSON uses double quotes to represent the strings.
+
+Sample Inputs and Outputs
+
+IN PYTHON                               IN JSON
+23                                      “23”
+‘welcome’                               “welcome”
+45.45                                   “45.45”
+True                                    “true”
+False                                   “false”
+None                                    “null”
+{'message' : 'welcome', 'count' : 2}    “{“message” : “welcome”, “count” : “2”}”
+[23, 24]                                “[“23”, “24”]”
+
+IN C++                                  IN JSON
+23                                      “23”
+"welcome"                               “welcome”
+45.45                                   “45.45”
+true                                    “true”
+false                                   “false”
+nullptr                                 “null”
+{"message" : "welcome"}                 “{“message” : “welcome”}"
+{"count" : 2}                           "{“count” : “2”}”
+[23, 24]                                “[“23”, “24”]”
+
+Note: 
+    • Python print statement can be misleading while representing the string, 
+    • You can use json.loads(encoded_text) to verify the correctness.
